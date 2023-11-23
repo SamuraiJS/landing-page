@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.features {
+	width: 80%;
+	padding-bottom: 30px;
+	margin: 0 10%;
+	display: flex;
+	flex-direction: column;
+	color: #222;
+}
+
+.title-features {
+	margin: 30px 0;
+	font-size: 1.8em;
+	color: #242424;
+	font-family: 'Agbalumo';
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+} 
+
+
+.title-section-features {
+	font-family: 'Agbalumo';
+	font-size: 1.3em;
+	margin: 0 0 15px 0;
+}
+
+.content-text {
+	position: relative;
+	width: 100%;
+	padding: 20px 10px;
+	line-height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.content-text p {
+	align-self: center;
+}
+
+.content-image {
+	width: 100%;
+	height: 45vh;
+	position: relative;
+}
+
+.content-text::before {
+	content: '';
+	width: 100%;
+	border: 1px solid #242424;
+	position: absolute;
+	top: -30px;
+
+}
+
+.content-image img {
+	object-fit: fill;
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (min-width: 760px) {
+	.title-features {
+		font-size: 3em;
+	}
+
+	.title-section-features {
+		font-size: 1.5em;
+	}
+
+	.section {
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+	} 
+
+	.two {
+		flex-direction: row-reverse;
+	}
+
+	.content-text {
+		width: 50%;
+	}
+
+	.content-text::before {
+		display: none;
+	}
+
+	.content-image {
+		width: 50%;/*<--*/
+	}
+}

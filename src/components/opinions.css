@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+.opinions {
+	display: flex;
+	width: 100%;
+	padding: 1rem 0 3rem 0;
+	flex-direction: column;
+	align-items: center;
+	height: auto; /*100vh*/
+}
+
+.title-opinions {
+	margin: 20px 0;
+	font-size: 3em;
+	font-family: 'Agbalumo';
+	color: #242424;
+}
+
+.carts-opinions {
+	height: auto; /*40vh*/
+	width: 80vw;
+	padding: 20px 0;
+	background-color: rgba(255, 255, 255, .6);
+	border-radius: 15px;
+	box-shadow: 0 0 30px 10px #fff;
+	margin: 0 20px;
+	display: flex;
+	gap: 20px;
+	flex-direction: column; /*no  tenía*/
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.cart {
+	min-height: 15rem;
+	width: 70%;
+	background-color: #242424;
+	border-radius: 10px;
+	box-shadow: 0 0 15px 2px rgb(32,172,161);
+	color: #eee;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.dates {
+	width: 100%;
+	height: 20%;
+	display: flex;
+	gap: 0 10px;
+	align-items: center;
+	margin: 10px 10px 0 10px; 
+}
+
+.name {
+	font-family: 'Agbalumo';
+}
+
+.img-perfil {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.img-perfil img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.text-opinion {
+	margin: 5px 10px;
+}
+
+.calification-opinion {
+	width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+	.opinions {
+		min-height: 700px;
+		justify-content: space-around;
+	}
+
+	.carts-opinions {
+		flex-direction: row;
+		min-height: 40vh;
+		width: auto;
+		padding: 20px;
+	}
+
+	.cart {
+		height: 250px;
+	}
+}
